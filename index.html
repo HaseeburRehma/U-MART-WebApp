@@ -2,267 +2,245 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>U-Mart</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <link rel="stylesheet" href="style.css">
+    <title>Coffee Shop</title>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Style CSS -->
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Font Awesome CDN -->
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Links -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Google Font -->
+   
 </head>
 <body>
+    
+   <!-- Navbar -->
+    <div class="navbar">
+    <nav>
+        <input type="checkbox" id="show-search">
+        <input type="checkbox" id="show-menu">
+        <label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
 
-    <section id="header">
-        <a href="#"><img src="img/logo.png" class="logo"alt=""></a>
-
-        <div>
-            <ul id="navbar">
-                <li><a class="active" href="index.html">Home</a></li>
-                <li><a href="Shop.html">Shop</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
-
+        <div class="content">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#order">Order</a></li>
             </ul>
         </div>
+
+        <label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+
+        <form action="#" class="search-box">
+            <input type="text" placeholder="Search...">
+            <button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+
+
+        </form>
+    </nav>
+
+    </div>
+    
+
+    <!-- NavbarEnd -->
+     <!-- Home Section Start -->
+     <section class="home">
+        <div class="home-content"  data-aos="zoom-in-down">
+            <h3>Enjoy Your <span>Cofee</span></h3>
+            <h3>Before Your Activity</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem earum, quae optio voluptate quam excepturi sapiente facilis? Corporis, facilis obcaecati!</p>
+            
+            <button id="btn"><a href="#order">ORDER NOW</a><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="img" data-aos="zoom-in-left"> 
+            <img src="./images/bg.png" alt="">
+        </div>
     </section>
-    <section id="hero">
-        <h4>NEW-YEAR-EXCITING-OFFER</h4>
-        <h2>SUPER BUMPER DEALS</h2>
-        <h1>ON ALL PRODUCTS</h1>
-        <p>Save UPTO 70% OFF...!</p>
-        <button>Shop Now </button>
-    </section>
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free Shipping</h6>
+    <!-- Home Section End -->
 
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online Order</h6>
 
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save Money</h6>
-
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotions</h6>
-
-        </div>
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Sell Happy</h6>
-        </div>
-        
-
-    </section>
-
-  <section id="product1" class="section-p1">
-      <h2>Featured Product</h2>
-      <p> Summer Collection Sale</p>
-      <div class="prod-container">
-           <div class="prod">
-               <img src="img/products/f1.jpg" alt="">
-               <div class="desc">
-                   <span>GUCCI</span>
-                   <h5>Cartoon T-shirt</h5>
-                    <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h4>3000pkr</h4>
-               </div>
-               <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-            </div>
-            <div class="prod">
-                <img src="img/products/f2.jpg" alt="">
-                <div class="desc">
-                    <span>Outfitters</span>
-                    <h5>Polo T-shirt</h5>
-                     <div class="star">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                    </div>
-                    <h4>4000pkr</h4>
+    <!-- Top Card Start -->
+    <section class="top-card" id="tp-card" data-aos="fade-up"
+    data-aos-duration="1500">
+        <h3>Why We Are Defferent?</h3>
+        <p>We don't just make your coffee, we make your day!</p>
+        <div class="row">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/coffee-beans 1.png" alt="">
+                    <h2>Supreme Coffee</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus libero harum repellat provident sapiente amet consectetur aperiam eos magnam.</p>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-            <div class="prod">
-                <img src="img/products/f3.jpg" alt="">
-                <div class="desc">
-                    <span>Armani</span>
-                     <h5> Plain-shirt</h5>
-                    <div class="star">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                    </div>
-                    <h4>3500pkr</h4>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/badge 1.png" alt="">
+                    <h2>High Quality</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus libero harum repellat provident sapiente amet consectetur aperiam eos magnam.</p>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-           </div>
-            <div class="prod">
-                <img src="img/products/f4.jpg" alt="">
-                <div class="desc">
-                    <span>GUCCI</span>
-                    <h5>Decent T-shirt</h5>
-                    <div class="star">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                    </div>
-                    <h4>3300pkr</h4>
-                </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-            <div class="prod">
-                <img src="img/products/f5.jpg" alt="">
-                <div class="desc">
-                    <span>GUCCI</span>
-                    <h5>Cartoon T-shirt</h5>
-                    <div class="star">
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                         <i class="fas fa-star"></i>
-                    </div>
-                    <h4>3000pkr</h4>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/coffee-cup 1.png" alt="">
+                    <h2>Extraordinary</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus libero harum repellat provident sapiente amet consectetur aperiam eos magnam.</p>
                 </div>
-                <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
             </div>
-        </div>    
-    </section>
-
-    <section id="banner" class="section-m1">
-        <h4> Services </h4>
-        <h2> Up to <span>75% Off</span> - All Products & Accessories</h2>
-        <button class="normal"> Find More </button>
-    </section>
-
-    <section id="product1" class="section-p1">
-        <h2>New Arrivals</h2>
-        <p> Winter Collection Sale</p>
-        <div class="prod-container">
-             <div class="prod">
-                 <img src="img/products/n1.jpg" alt="">
-                 <div class="desc">
-                     <span>GUCCI</span>
-                     <h5> Amazing-shirt</h5>
-                      <div class="star">
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                          <i class="fas fa-star"></i>
-                      </div>
-                      <h4>3000pkr</h4>
-                 </div>
-                 <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-              </div>
-              <div class="prod">
-                  <img src="img/products/n2.jpg" alt="">
-                  <div class="desc">
-                      <span>Outfitters</span>
-                      <h5>Dress-shirt</h5>
-                       <div class="star">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                      </div>
-                      <h4>4000pkr</h4>
-                  </div>
-                  <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-              </div>
-              <div class="prod">
-                  <img src="img/products/n3.jpg" alt="">
-                  <div class="desc">
-                      <span>Armani</span>
-                       <h5> Plain-shirt</h5>
-                      <div class="star">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                      </div>
-                      <h4>3500pkr</h4>
-                  </div>
-                  <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-             </div>
-              <div class="prod">
-                  <img src="img/products/n4.jpg" alt="">
-                  <div class="desc">
-                      <span>GUCCI</span>
-                      <h5>Decent shirt</h5>
-                      <div class="star">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                      </div>
-                      <h4>3300pkr</h4>
-                  </div>
-                  <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-              </div>
-              <div class="prod">
-                  <img src="img/products/n5.jpg" alt="">
-                  <div class="desc">
-                      <span>GUCCI</span>
-                      <h5>Plain-shirt</h5>
-                      <div class="star">
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                           <i class="fas fa-star"></i>
-                      </div>
-                      <h4>3000pkr</h4>
-                  </div>
-                  <a href="#"><i class="fal fa-shopping-cart cart"></i></a>
-              </div>
-          </div>    
-    </section>
-
-    <section id="s-banner" class="section-p1">
-        <div class="banner-box">
-            <h4>Bumpper Offer </h4>
-            <h2> Buy One Get Two Free </h2>
-            <span>The Best Sale of the Year </span>
-            <button class="White">Learn More </button>
-
-        </div>
-        <div class="banner-box banner-box2">
-            <h4>Spring/Summer </h4>
-            <h2> Buy One Get Two Free </h2>
-            <span>The Best Sale of the Year </span>
-            <button class="White">Collection </button>
-
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/best-price 1.png" alt="">
+                    <h2>Affordable Prices</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi ducimus libero harum repellat provident sapiente amet consectetur aperiam eos magnam.</p>
+                </div>
+            </div>
         </div>
     </section>
-        
+    <!-- Top Card End -->
+
+    <!-- Menu Section Start -->
+    <section class="menu" id="menu">
+        <h4>Our Menu</h4>
+        <div class="row">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m1.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m2.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m3.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m4.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-top: 30px;"  data-aos="fade-up"
+        data-aos-duration="1500">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m5.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m6.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m7.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/m8.png" alt="">
+                    <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Coffee <span>$20.5</span></h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, odit.</p>
+                    <h6><button id="btn1">Shop Now</button> <button id="btn2">Add Cart</button></h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Menu Section End -->
 
 
 
-
-
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
